@@ -1,0 +1,46 @@
+/** Create store database
+
+Atleast 15 items:
+Black Pen
+Blue Pen
+Pencil
+College Ruled Notebook
+Standard Ruled Notebook
+Loose Leaf Paper
+Tape
+Scissors
+Staples
+Ruler
+Pouch
+Calendar
+White Out
+Toner
+Printer Ink
+
+Each item should have atleast 5 properties:
+ID, name, quantity, aisle location, prices**/
+
+CREATE TABLE office_store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+
+INSERT INTO office_store VALUES(1, "Black Pen", 10, 1, 2);
+INSERT INTO office_store VALUES(2, "Blue Pen", 10, 1, 2);
+INSERT INTO office_store VALUES(3, "Pencil", 10, 1, 1);
+INSERT INTO office_store VALUES(4, "Notebook - College Ruled", 5, 2, 4);
+INSERT INTO office_store VALUES(5, "Notebook - Standard", 5, 2, 4);
+INSERT INTO office_store VALUES(6, "Paper - Loose", 5, 2, 3);
+INSERT INTO office_store VALUES(7, "Tape", 10, 3, 3);
+INSERT INTO office_store VALUES(8, "Scissors", 10, 3, 5);
+INSERT INTO office_store VALUES(9, "Staples", 22, 2, 3);
+INSERT INTO office_store VALUES(10, "Ruler", 10, 3, 2);
+INSERT INTO office_store VALUES(11, "Pouch", 5, 1, 6);
+INSERT INTO office_store VALUES(12, "Calendar", 10, 4, 10);
+INSERT INTO office_store VALUES(13, "White out", 5, 5, 7);
+INSERT INTO office_store VALUES(14, "Toner", 10, 5, 50);
+INSERT INTO office_store VALUES(15, "Printer Ink", 5, 5, 25);
+
+SELECT * FROM office_store;                                                                   /** QUERY ALL FROM office_store table **/
+
+SELECT * FROM office_store WHERE price > 5 ORDER BY price desc;                               /** Query office_store by price greater than $5 and display in order by descending **/
+
+SELECT * FROM office_store WHERE aisle > 3 AND price > 5 ORDER BY price desc;                 /** Query based on location of Aisle with greather than 3 operator, filtered further by price greater than 5, and ordered from highest to lowest **/
+
