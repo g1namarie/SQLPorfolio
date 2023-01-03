@@ -1,0 +1,17 @@
+/** Favorite Booklist
+A Little Life
+Females
+The Three-Body Problem
+Horrorstor
+Hello Molly
+Crying in H Mart
+**/
+
+CREATE TABLE favoritebooks (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+INSERT INTO favoritebooks VALUES (1, "A Little Life", 3);
+INSERT INTO favoritebooks VALUES (2, "Females", 3);
+INSERT INTO favoritebooks VALUES (3, "The Three-Body Problem", 4);
+INSERT INTO favoritebooks VALUES (4, "Horrorstor", 4);
+INSERT INTO favoritebooks VALUES (5, "Hello, Molly!", 4);
+INSERT INTO favoritebooks Values (6, "Crying in H-Mart", 5);
+SELECT * FROM favoritebooks;
