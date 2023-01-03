@@ -1,4 +1,4 @@
-/** Favorite Booklist
+/** Define Favorite Booklist for reference
 A Little Life
 Females
 The Three-Body Problem
@@ -7,8 +7,8 @@ Hello Molly
 Crying in H Mart
 **/
 
-CREATE TABLE favoritebooks (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
-INSERT INTO favoritebooks VALUES (1, "A Little Life", 3);
+CREATE TABLE favoritebooks (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);   /**Create initial table and determine property values **/
+INSERT INTO favoritebooks VALUES (1, "A Little Life", 3);                         /**Insert values into table that was created "favoritebooks" **/
 INSERT INTO favoritebooks VALUES (2, "Females", 3);
 INSERT INTO favoritebooks VALUES (3, "The Three-Body Problem", 4);
 INSERT INTO favoritebooks VALUES (4, "Horrorstor", 4);
