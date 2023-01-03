@@ -1,0 +1,10 @@
+/** Create todo list table and aggregate the data by total SUM of minutes **/
+
+CREATE TABLE todo_list (id INTEGER PRIMARY KEY, item TEXT, minutes INTEGER);    **/ Create todo list table and determine values and types **/
+
+INSERT INTO todo_list VALUES (1, "Wash the dishes", 15);                        **/ Input values into table, set properties of each value **/
+INSERT INTO todo_list VALUES (2, "vacuuming", 20);
+INSERT INTO todo_list VALUES (3, "Learn some stuff on KA", 30);
+INSERT INTO todo_list VALUES (4, "Relax", 60);
+
+SELECT SUM(minutes) FROM todo_list;                                             **/ Query data from todo_list table and utilize the aggregate SUM function to total the amount of minutes all tasks will take **/
